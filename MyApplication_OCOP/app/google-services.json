@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1087103021558",
+    "firebase_url": "https://demoocop-85432-default-rtdb.firebaseio.com",
+    "project_id": "demoocop-85432",
+    "storage_bucket": "demoocop-85432.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087103021558:android:bfa8c8fae55f2318a697d7",
+        "android_client_info": {
+          "package_name": "ntu.proj.myapplication_ocop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFH-F-GMpfF7n2KWFKsvovhFeBh_o3Hkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
