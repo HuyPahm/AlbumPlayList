@@ -11,12 +11,17 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.ktx.Firebase;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText input;
     private Button btn;
-    private databaseReference rootdatabaseref;
-    private DatabaseReference
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        // Write a message to the database
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference rootDatabaseref = database.getReference();
+
 
         input=findViewById(R.id.input);
         btn=findViewById(R.id.btn);
@@ -36,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String data=input.getText().toString();
+                rootDatabaseref.setValue(data);
             }
         });
     }
