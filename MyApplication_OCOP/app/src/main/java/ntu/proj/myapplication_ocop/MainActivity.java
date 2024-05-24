@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         });
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference rootDatabaseref = database.getReference();
+        DatabaseReference rootDatabaseref = database.getReference().child("data");
 
 
         input=findViewById(R.id.input);
