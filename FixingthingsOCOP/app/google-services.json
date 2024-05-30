@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "255051871934",
+    "project_id": "fixing-the-things-ocop",
+    "storage_bucket": "fixing-the-things-ocop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255051871934:android:f210cb618b71f9049690ef",
+        "android_client_info": {
+          "package_name": "ntu.proj.fixingthingsocop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmy4v2fyBpt-XmiVDYKETPohyO14Mnij8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
