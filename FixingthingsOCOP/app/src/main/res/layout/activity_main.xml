@@ -27,4 +27,16 @@
         android:text="send"
         android:layout_below="@id/input"
         android:id="@+id/btn"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read"
+        android:layout_below="@id/btn"
+        android:id="@+id/btnRead"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Có gì đâu show"
+        android:id="@+id/textView"
+        android:layout_below="@+id/btnRead"/>
 </RelativeLayout>

@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -70,6 +71,9 @@ public class MainActivity extends AppCompatActivity {
     private EditText input;
     private Button btn;
 
+    private Button btnRead;
+    private TextView textView;
+
 
 
 
@@ -90,6 +94,16 @@ public class MainActivity extends AppCompatActivity {
 
         input=findViewById(R.id.input);
         btn=findViewById(R.id.btn);
+        btnRead=findViewById(R.id.btnRead);
+        textView=findViewById(R.id.textView);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
