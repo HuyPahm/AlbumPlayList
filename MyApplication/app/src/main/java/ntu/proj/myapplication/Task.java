@@ -1,9 +1,11 @@
-package ntu.proj.fixingthingsocop;
+package ntu.proj.myapplication;
 
 import java.io.Serializable;
 import java.util.HashMap;
+import java.io.Serializable;
+import java.util.HashMap;
 
-public class Testing implements Serializable {
+public class Task implements Serializable {
 
     public String getID() {
         return ID;
@@ -94,18 +96,18 @@ public class Testing implements Serializable {
     }
 
     String ID;
-String HuyenThanh;
-String TenSP;
-String PhanLoai;
-String TenChuSX;
-String LoaiHinhSX;
-String DiaChi;
-String TenDaiDIen;
-String SDT;
-String SoHangSao;
-String NamCongNhan;
+    String HuyenThanh;
+    String TenSP;
+    String PhanLoai;
+    String TenChuSX;
+    String LoaiHinhSX;
+    String DiaChi;
+    String TenDaiDIen;
+    String SDT;
+    String SoHangSao;
+    String NamCongNhan;
 
-    public Testing(String ID, String huyenThanh, String tenSP, String phanLoai, String tenChuSX, String loaiHinhSX, String diaChi, String tenDaiDIen, String SDT, String soHangSao, String namCongNhan) {
+    public Task(String ID, String huyenThanh, String tenSP, String phanLoai, String tenChuSX, String loaiHinhSX, String diaChi, String tenDaiDIen, String SDT, String soHangSao, String namCongNhan) {
         this.ID = ID;
         HuyenThanh = huyenThanh;
         TenSP = tenSP;
@@ -119,11 +121,11 @@ String NamCongNhan;
         NamCongNhan = namCongNhan;
     }
 
-    public Testing() {
-    }
+//    public Testing() {
+//    }
 
-    public HashMap <String, String> toFirebaseObject(){
-        HashMap <String, String> testObject = new HashMap<String,String>();
+    public HashMap<String, String> toFirebaseObject() {
+        HashMap<String, String> testObject = new HashMap<String, String>();
         testObject.put("ID", ID);
         testObject.put("HuyenThanh", HuyenThanh);
         testObject.put("TenSP", TenSP);
@@ -140,4 +142,3 @@ String NamCongNhan;
 
     }
 }
-

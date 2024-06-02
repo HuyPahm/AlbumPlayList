@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -13,6 +14,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -28,6 +32,7 @@ import java.util.List;
 //
 //    List<Testing> lstOCOP;
 //
+//    RVadapter adapter;
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);
@@ -41,29 +46,43 @@ import java.util.List;
 //
 //        //kết nối csdl
 //        FirebaseDatabase database = FirebaseDatabase.getInstance();
-//        DatabaseReference databaseReference = database.getReference("example");
+//        DatabaseReference databaseReference = database.getReference("Test");
 //        //lang81 nghe
 //        lstOCOP = new ArrayList<Testing>();
-//        databaseReference.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                // lấy dữ liệu từ biến snapshot, đưa vào một biến danh sách để xử lý
 //
-//                for(DataSnapshot obj: snapshot.getChildren()){
-//                    Testing testing = obj.getValue(Testing.class);
-//                    lstOCOP.add(testing);
-//                    Log.w("Test", "Cu em oi"+ testing.getName());
-//                }
+//        databaseReference.addValueEventListener(ngheFB);
 //
-//            }
 //
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
+//        //dieu khien
 //
-//            }
-//        });
+//        RecyclerView recyclerView = findViewById(R.id.rcv);
+//        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+//        recyclerView.setLayoutManager(linearLayoutManager);
+//        recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
+//        adapter = new RVadapter(lstOCOP);
+//        recyclerView.setAdapter(adapter);
+//        adapter.notifyDataSetChanged();
 //
 //    }
+//    ValueEventListener ngheFB = new ValueEventListener() {
+//        @Override
+//        public void onDataChange(@NonNull DataSnapshot snapshot) {
+//            // lấy dữ liệu từ biến snapshot, đưa vào một biến danh sách để xử lý
+//            for(DataSnapshot obj: snapshot.getChildren()){
+//                Testing testing = obj.getValue(Testing.class);
+//                lstOCOP.add(testing);
+////                    Log.w("Test", "007"+ testing.ID());
+////                    Log.w("te")
+//            }
+//            adapter.notifyDataSetChanged();
+//
+//        }
+//
+//        @Override
+//        public void onCancelled(@NonNull DatabaseError error) {
+//
+//        }
+//    };
 //}
 
 public class MainActivity extends AppCompatActivity {
@@ -92,18 +111,17 @@ public class MainActivity extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         rootDatabaseref = database.getReference().child("huycc");
 
-
         input=findViewById(R.id.input);
         input2=findViewById(R.id.input2);
-        input3=findViewById(R.id.input3);
-        input4=findViewById(R.id.input4);
-        input5=findViewById(R.id.input5);
-        input6=findViewById(R.id.input6);
-        input7=findViewById(R.id.input7);
-        input8=findViewById(R.id.input8);
-        input9=findViewById(R.id.input9);
-        input10=findViewById(R.id.input10);
-        input11=findViewById(R.id.input11);
+//        input3=findViewById(R.id.input3);
+//        input4=findViewById(R.id.input4);
+//        input5=findViewById(R.id.input5);
+//        input6=findViewById(R.id.input6);
+//        input7=findViewById(R.id.input7);
+//        input8=findViewById(R.id.input8);
+//        input9=findViewById(R.id.input9);
+//        input10=findViewById(R.id.input10);
+//        input11=findViewById(R.id.input11);
         btn=findViewById(R.id.btn);
         btnRead=findViewById(R.id.btnRead);
         textView=findViewById(R.id.textView);
@@ -156,5 +174,9 @@ public class MainActivity extends AppCompatActivity {
                 rootDatabaseref.setValue(data);
             }
         });
+
+
+
+
     }
 }

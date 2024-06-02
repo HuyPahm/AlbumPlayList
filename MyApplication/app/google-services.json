@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "738741806212",
+    "project_id": "my-application-ad92d",
+    "storage_bucket": "my-application-ad92d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738741806212:android:3e9ba3fcfa4f39d19b0ed1",
+        "android_client_info": {
+          "package_name": "ntu.proj.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcxng97Q4qZbZojVDKMm83XDUSuQd3fVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
