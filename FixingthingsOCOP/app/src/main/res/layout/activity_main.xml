@@ -19,13 +19,77 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter here"
+        android:hint="ID"
         android:id="@+id/input"/>
+
+    <EditText
+        android:layout_below="@id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Huyen/thi"
+        android:id="@+id/input2"/>
+    <EditText
+        android:layout_below="@id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TenSP"
+        android:id="@+id/input3"/>
+    <EditText
+        android:layout_below="@id/input3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="PhanLoai"
+        android:id="@+id/input4"/>
+    <EditText
+        android:layout_below="@id/input4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TenChuSX"
+        android:id="@+id/input5"/>
+    <EditText
+        android:layout_below="@id/input5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="LoaiHinhSX"
+        android:id="@+id/input6"/>
+    <EditText
+        android:layout_below="@id/input6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DiaChi"
+        android:id="@+id/input7"/>
+    <EditText
+        android:layout_below="@id/input7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TenNguoiDaiDien"
+        android:id="@+id/input8"/>
+    <EditText
+        android:layout_below="@id/input8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="SĐT"
+        android:id="@+id/input9"/>
+
+    <EditText
+        android:layout_below="@id/input9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="SoHangSao"
+        android:id="@+id/input10"/>
+
+    <EditText
+        android:layout_below="@id/input10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NamCongNhan"
+        android:id="@+id/input11"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="send"
-        android:layout_below="@id/input"
+        android:layout_below="@id/input11"
         android:id="@+id/btn"/>
     <Button
         android:layout_width="match_parent"
@@ -39,4 +103,10 @@
         android:text="Có gì đâu show"
         android:id="@+id/textView"
         android:layout_below="@+id/btnRead"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Có gì đâu show"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"/>
 </RelativeLayout>

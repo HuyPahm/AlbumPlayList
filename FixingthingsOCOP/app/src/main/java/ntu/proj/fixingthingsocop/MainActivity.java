@@ -68,12 +68,13 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText input;
+    private EditText input, input1,input2,input3,input4,input5,input6,input7,input8,input9,input10,input11;
     private Button btn;
 
     private Button btnRead;
-    private TextView textView;
+    private TextView textView,textView2;
 
+    private DatabaseReference rootDatabaseref;
 
 
 
@@ -89,15 +90,44 @@ public class MainActivity extends AppCompatActivity {
         });
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference rootDatabaseref = database.getReference().child("data");
+        rootDatabaseref = database.getReference().child("huycc");
 
 
         input=findViewById(R.id.input);
+        input2=findViewById(R.id.input2);
+        input3=findViewById(R.id.input3);
+        input4=findViewById(R.id.input4);
+        input5=findViewById(R.id.input5);
+        input6=findViewById(R.id.input6);
+        input7=findViewById(R.id.input7);
+        input8=findViewById(R.id.input8);
+        input9=findViewById(R.id.input9);
+        input10=findViewById(R.id.input10);
+        input11=findViewById(R.id.input11);
         btn=findViewById(R.id.btn);
         btnRead=findViewById(R.id.btnRead);
         textView=findViewById(R.id.textView);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+//        rootDatabaseref = FirebaseDatabase.getInstance().getReference().child("huycc");
+//
+//        btnRead.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                rootDatabaseref.addValueEventListener(new ValueEventListener() {
+//                    @Override
+//                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+//
+//                    }
+//
+//                    @Override
+//                    public void onCancelled(@NonNull DatabaseError error) {
+//
+//                    }
+//                })
+//            }
+//        });
+
+        btnRead.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 rootDatabaseref.addValueEventListener(new ValueEventListener() {
