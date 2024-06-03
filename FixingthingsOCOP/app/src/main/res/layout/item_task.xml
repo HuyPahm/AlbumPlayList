@@ -1,0 +1,104 @@
+<!-- res/layout/item_task.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/task_item_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/task_item_Huyen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Huyen"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/task_item_TenSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TenSP"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/task_item_PhanLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PhanLoai"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/task_item_TenChuSX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TenChuSX"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/task_item_LoaiHinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LoaiHinh"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/task_item_DiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DiaChi"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/task_item_TenDD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TenDD"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/task_item_SDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SDT"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/task_item_SHS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHS"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/task_item_NamCN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NamCN"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:onClick="editTask" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:onClick="deleteTask" />
+    </LinearLayout>
+</LinearLayout>
